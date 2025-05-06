@@ -181,7 +181,7 @@ public class MonthlyListener extends BaseCampaignEventListener {
 			rolesCounts.merge(role,1, Integer::sum);
 		}
 
-		String output = "Hull, Variant, Role, Chance (10 is 100%)" + System.lineSeparator();
+		//String output = "Hull, Variant, Role, Chance (10 is 100%)" + System.lineSeparator();
 
 		for (Map.Entry<ShipVariantAPI,EnumShipRoles> playerVariantRole : playerVariantsRoles.entrySet()) {
 			ShipVariantAPI variant = playerVariantRole.getKey();
@@ -190,10 +190,8 @@ public class MonthlyListener extends BaseCampaignEventListener {
 			float fraction = (float) (10.0 / (float) count);
 
 			settings.addEntryForRole(faction.getId(), role.getValue(), variant.getHullVariantId(), fraction);
-			output += variant.getHullSpec().getHullName() + ", " + variant.getDisplayName() + ", " + role.getValue() + ", " + fraction  + System.lineSeparator();
+			//output += variant.getHullSpec().getHullName() + ", " + variant.getDisplayName() + ", " + role.getValue() + ", " + fraction  + System.lineSeparator();
 		}
-
-		output.isEmpty();
 
 	}
 }

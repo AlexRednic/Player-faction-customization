@@ -1,13 +1,13 @@
 {
-    "masterVersionFile":"https://bitbucket.org/DarkRevenant/speedup/downloads/speedUp.version",
+    "masterVersionFile":"https://raw.githubusercontent.com/AlexRednic/Player-faction-customization/refs/heads/main/PlayerFactionCustomization.version",
     "modName":"Player Faction Customization",
-    "modThreadId":13394,
-    "directDownloadURL": "https://bitbucket.org/DarkRevenant/speedup/downloads/SpeedUp_1.2.2.7z",
-    "changelogURL":"https://bitbucket.org/DarkRevenant/speedup/downloads/change_log.txt",
+    "modThreadId":32964,
+    "directDownloadURL": "https://github.com/AlexRednic/Player-faction-customization/archive/refs/heads/main.zip",
+    "changelogURL":"https://raw.githubusercontent.com/AlexRednic/Player-faction-customization/refs/heads/main/change%20log.txt",
     "modVersion":
     {
         "major":0,
-        "minor":0,
-        "patch":1
-    },
+        "minor":1,
+        "patch":0
+    }
 }
