@@ -2,6 +2,13 @@
 
 Player-faction-customization is a mod for [Starsector](https://fractalsoftworks.com/) that implements a streamlined system to customize your faction's ships and loadouts. It generates known blueprints based on existing ships, but with the sprites you define, creating a unique look for you faction's fleets. Also, when you configure variants and loadouts for your own fleet, these will get transfered and prioritized by your faction when generating fleets.
 
+For more in-depth information on modding refer to the following resources:
+
+Intro to modding -https://starsector.fandom.com/wiki/Intro_to_Modding
+skin files - https://starsector.fandom.com/wiki/.skin_File_Overview
+mod tools - https://fractalsoftworks.com/forum/index.php?topic=12725.0
+full spriting tutorial - https://fractalsoftworks.com/forum/index.php?topic=11036.0
+
 ### Highlights
 - Separate skins and category for your faction specific ships/skins
 - Campaign Integration to not disrupt immersion
