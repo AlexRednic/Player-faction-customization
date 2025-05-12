@@ -4,10 +4,11 @@ Player-faction-customization is a mod for [Starsector](https://fractalsoftworks.
 
 For more in-depth information on modding refer to the following resources:
 
-Intro to modding -https://starsector.fandom.com/wiki/Intro_to_Modding
-skin files - https://starsector.fandom.com/wiki/.skin_File_Overview
-mod tools - https://fractalsoftworks.com/forum/index.php?topic=12725.0
-full spriting tutorial - https://fractalsoftworks.com/forum/index.php?topic=11036.0
+- Intro to modding - https://starsector.fandom.com/wiki/Intro_to_Modding
+- skin files - https://starsector.fandom.com/wiki/.skin_File_Overview
+- mod tools - https://fractalsoftworks.com/forum/index.php?topic=12725.0
+- full spriting tutorial - https://fractalsoftworks.com/forum/index.php?topic=11036.0
+- GIMP Recolorize - https://www.youtube.com/watch?v=S3idTrbnggI
 
 ### Highlights
 - Separate skins and category for your faction specific ships/skins
