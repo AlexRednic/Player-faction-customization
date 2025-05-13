@@ -28,7 +28,7 @@ Take one of the existing sprites and recolorize (that's what I did)
 ![sprite_example](readme-screenshots/sprite_example.png)
 
 Create a skin file for the new ship based on an existing ship. Pay attention to the following lines:
-- `"baseHullId":"legion",` - **The base hull for which of your new ship. Either keep the base hull if you're copying a skin (like this example for the Legion (XIV), or if you're creating a skin based on a base hull, make sure this id points to a .ship file (found in data/hulls/)**
+- `"baseHullId":"legion",` - **The base hull for which you're creating the skin. Either keep the base hull id if you're copying a skin (like this example for the Legion (XIV)), or if you're creating a skin based on a base hull, make sure this id points to a .ship file (found in data/hulls/)**
 - `"skinHullId":"legion_xiv_player",` - **The id of your new ship**
 - `"hullName":"Legion (XIV-DAC)",` - **The display name of your new ship**
 - `"descriptionId":"legion",`
