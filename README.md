@@ -28,12 +28,12 @@ Take one of the existing sprites and recolorize (that's what I did)
 ![sprite_example](readme-screenshots/sprite_example.png)
 
 Create a skin file for the new ship based on an existing ship. Pay attention to the following lines:
+- `"baseHullId":"legion",` - **The base hull for which of your new ship. Either keep the base hull if you're copying a skin (like this example for the Legion (XIV), or if you're creating a skin based on a base hull, make sure this id points to a .ship file (found in data/hulls/)**
 - `"skinHullId":"legion_xiv_player",` - **The id of your new ship**
 - `"hullName":"Legion (XIV-DAC)",` - **The display name of your new ship**
 - `"descriptionId":"legion",`
 - `"descriptionPrefix":"This ship a repaint of the Legion (XIV).",`  - **The description of your new ship**
-- `"tags":["no_bp_drop","dep_legion_xiv"],`  - **MUST add these tags. no_bp_drop - prevents drops, dep_legion_xiv - sets legion_xiv as a 
-  dependency. Meaning your ship won't be generated until you learn the dependency's blueprint - in this case Legion (XIV)**
+- `"tags":["no_bp_drop","dep_legion_xiv"],`  - **MUST add these tags. no_bp_drop - prevents drops, dep_legion_xiv - sets legion_xiv as a dependency. Meaning your ship won't be generated until you learn the dependency's blueprint - in this case Legion (XIV)**
 - `"tech":"player",` - **Manufacturer of the ship. This is the id of the player faction. MUST be like this**
 - `"fleetPoints":30,`
 - `"ordnancePoints":310,`
