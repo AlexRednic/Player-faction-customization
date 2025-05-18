@@ -13,6 +13,7 @@ import com.fs.starfarer.api.util.Misc;
 import com.fs.starfarer.api.impl.campaign.ids.Industries;
 import com.fs.starfarer.api.impl.campaign.ids.Factions;
 import playerfactioncustomization.ids.EnumShipRoles;
+import playerfactioncustomization.settings.Settings;
 
 import java.text.DecimalFormat;
 import java.util.*;
@@ -91,6 +92,9 @@ public class MonthlyListener extends BaseCampaignEventListener {
 	 */
 	public boolean playerHasShipProduction() {
 		FactionAPI faction = Global.getSector().getPlayerFaction();
+
+		if (Settings.getIndustryCheck() == false)
+			return true;
 
 		for (MarketAPI market : Global.getSector().getEconomy().getMarketsCopy()){
 			if (market.getFaction().equals(faction)) {

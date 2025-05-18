@@ -1,2 +1,7 @@
+Version 0.1.1 (May 17, 2025):
+- Added config file:
+    - Config option "requiredIndustryCheck" - Enable or disable industry requirement check. Ie. whether player ship specific blueprints are added only if one of the player's colonies has Heavy Industry or Orbital Works. Default true
+- Added paragon player skin
+
 Version 0.1.0 (May 1, 2025):
 - Initial release

@@ -5,6 +5,7 @@ import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.thoughtworks.xstream.XStream;
 import playerfactioncustomization.listeners.MonthlyListener;
+import playerfactioncustomization.settings.Settings;
 
 import java.util.List;
 import java.util.Objects;
@@ -27,5 +28,7 @@ public class PlayerFactionCustomizationModPlugin extends BaseModPlugin {
 
 		if (monthlyListener == false)
 			sector.addListener(new MonthlyListener(true));
+
+		Settings.getSettings();
 	}
 }
