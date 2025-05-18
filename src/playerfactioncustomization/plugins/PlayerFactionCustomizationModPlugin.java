@@ -7,7 +7,6 @@ import com.thoughtworks.xstream.XStream;
 import playerfactioncustomization.listeners.MonthlyListener;
 import playerfactioncustomization.settings.Settings;
 
-import java.util.List;
 import java.util.Objects;
 
 public class PlayerFactionCustomizationModPlugin extends BaseModPlugin {
@@ -21,14 +20,21 @@ public class PlayerFactionCustomizationModPlugin extends BaseModPlugin {
 	@Override
 	public void onGameLoad(boolean newGame) {
 		SectorAPI sector = Global.getSector();
-		boolean monthlyListener = false;
-		for (Object listener : sector.getAllListeners())
-			if(Objects.equals(listener.getClass(),MonthlyListener.class))
-				monthlyListener = true;
+		boolean monthlyListenerActive = false;
+		MonthlyListener listenerPFC = null;
 
-		if (monthlyListener == false)
+		for (Object listener : sector.getAllListeners())
+			if(Objects.equals(listener.getClass(),MonthlyListener.class)) {
+				monthlyListenerActive = true;
+				listenerPFC = (MonthlyListener) listener;
+			}
+
+		if (monthlyListenerActive == false)
 			sector.addListener(new MonthlyListener(true));
 
 		Settings.getSettings();
+		if (listenerPFC != null) {
+			listenerPFC.playerFactionUpdateVariants();
+		}
 	}
 }
