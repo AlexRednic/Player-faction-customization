@@ -15,6 +15,8 @@ For more in-depth information on modding refer to the following resources:
 - Campaign Integration to not disrupt immersion
 - Automatic generation of faction ship variants based on your own configured variants
 
+## Caveat: Right now, variants in your faction fleet generation are updated at the beginning of the month or when you add a new variant in the refit screen. If you don't see them, try check/uncheck on priority ships to refresh.
+
 ## Step 1 - Create ships and sprites
 
 Create your own ships based on existing skins and hulls, put them in the required locations.
@@ -72,8 +74,8 @@ Then, we go to our fleet and build some variants.
 
 ![eradicator_player_variants](readme-screenshots/eradicator_player_variants.png)
 
-Again, at the end of the month, together with the design generation, the variants that we configured will be distributed to combat roles 
-and loaded up to our fleets. The variants that the player configures will take over the whole role and exclude any other variants 
+When you exit the refit screen and again, at the end of the month, together with the design generation, the variants that we configured 
+will be distributed to combat roles and loaded up to our fleets. The variants that the player configures will take over the whole role and exclude any other variants 
 configured elsewhere. For roles that cannot be found in player variants, it's business as always. For now, only combat roles are being 
 taken into consideration.
 

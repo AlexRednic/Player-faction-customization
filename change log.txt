@@ -1,3 +1,7 @@
+Version 0.1.3 (May 19, 2025):
+- Variants roles for player faction are now updated when adding a new variant in refit screen as well
+- Refactoring
+
 Version 0.1.2 (May 17, 2025):
 - Update variants and roles for doctrine at game load
 - Added Heron and Hammerhead player skins to default pack

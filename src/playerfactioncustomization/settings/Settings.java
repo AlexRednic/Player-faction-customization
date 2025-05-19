@@ -7,6 +7,8 @@ import org.apache.log4j.Logger;
 public class Settings {
 
 	private static final String MOD_ID = "playerfactioncustomization";
+	private static final String CONFIG_PATH = "data/config/playerfactioncustomization_settings.json";
+
 	private static boolean INDUSTRY_CHECK = true;
 
 	public static void getSettings() {
@@ -14,7 +16,7 @@ public class Settings {
 		Logger log = Global.getLogger(Settings.class);
 
 		try {
-			JSONObject configData = Global.getSettings().getMergedJSONForMod("data/config/playerfactioncustomization_settings.json",Settings.MOD_ID);
+			JSONObject configData = Global.getSettings().getMergedJSONForMod(CONFIG_PATH,MOD_ID);
 			INDUSTRY_CHECK = configData.getBoolean("requiredIndustryCheck");
 		} catch (Exception e) {
 			log.info(e.getMessage());

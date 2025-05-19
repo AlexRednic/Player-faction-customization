@@ -4,7 +4,9 @@ import com.fs.starfarer.api.BaseModPlugin;
 import com.fs.starfarer.api.Global;
 import com.fs.starfarer.api.campaign.SectorAPI;
 import com.thoughtworks.xstream.XStream;
+import playerfactioncustomization.faction.PlayerFaction;
 import playerfactioncustomization.listeners.MonthlyListener;
+import playerfactioncustomization.listeners.RefitListener;
 import playerfactioncustomization.settings.Settings;
 
 import java.util.Objects;
@@ -21,20 +23,19 @@ public class PlayerFactionCustomizationModPlugin extends BaseModPlugin {
 	public void onGameLoad(boolean newGame) {
 		SectorAPI sector = Global.getSector();
 		boolean monthlyListenerActive = false;
-		MonthlyListener listenerPFC = null;
 
 		for (Object listener : sector.getAllListeners())
 			if(Objects.equals(listener.getClass(),MonthlyListener.class)) {
 				monthlyListenerActive = true;
-				listenerPFC = (MonthlyListener) listener;
 			}
 
 		if (monthlyListenerActive == false)
 			sector.addListener(new MonthlyListener(true));
 
+		sector.getListenerManager().addListener(new RefitListener(),true);
+
 		Settings.getSettings();
-		if (listenerPFC != null) {
-			listenerPFC.playerFactionUpdateVariants();
-		}
+		PlayerFaction.updateVariants();
+
 	}
 }
