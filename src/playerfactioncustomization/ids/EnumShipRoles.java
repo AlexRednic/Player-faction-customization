@@ -17,12 +17,12 @@ public enum EnumShipRoles {
 	CARRIER_MEDIUM ("carrierMedium"),
 	CARRIER_LARGE ("carrierLarge");
 
-	private String value;
-	private EnumShipRoles(String value) {
+	private final String value;
+
+	EnumShipRoles(String value) {
 		this.value = value;
 	}
 	public String getValue() {
 		return this.value;
 	}
-
 }

@@ -8,6 +8,7 @@ import playerfactioncustomization.faction.PlayerFaction;
 import playerfactioncustomization.listeners.MonthlyListener;
 import playerfactioncustomization.listeners.RefitListener;
 import playerfactioncustomization.settings.Settings;
+import playerfactioncustomization.ui.PlayerFactionIntelPlugin;
 
 import java.util.Objects;
 
@@ -37,5 +38,6 @@ public class PlayerFactionCustomizationModPlugin extends BaseModPlugin {
 		Settings.getSettings();
 		PlayerFaction.updateVariants();
 
+		PlayerFactionIntelPlugin.getInstance(true);
 	}
 }

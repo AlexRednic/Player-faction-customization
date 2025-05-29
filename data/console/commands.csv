@@ -1,0 +1,4 @@
+command,class,tags,syntax,help
+PrintPlayerFactionFleets,playerfactioncustomization.console.PrintPlayerFactionFleets,"playerfactioncustomization", printplayerfactionfleets <economicOnly>, "Print list of player faction fleets to log. economicOnly boolean parameter to only print economic fleets."
+PlayerFactionLearnBlueprints,playerfactioncustomization.console.PlayerFactionLearnBlueprints,"playerfactioncustomization", playerfactionlearnblueprints, "Learn blueprints specific to your faction"
+PlayerFactionUpdateVariants,playerfactioncustomization.console.PlayerFactionUpdateVariants,"playerfactioncustomization", playerfactionupdatevariants, "Update variants from your configured variants to the faction preferred variants."

@@ -2,7 +2,7 @@
     "id": "player-faction-customization",
     "name": "Player Faction Customization",
     "author": "Aleksandros",
-    "version": "0.1.3",
+    "version": "0.2.0",
     "utility": "false",
     "description": "Adds capability to customize player's fleet and faction generated fleets.",
     "gameVersion": "0.98a-RC8",

@@ -1,4 +1,5 @@
 {
-  "requiredIndustryCheck": true
-
+  "requiredIndustryCheck": true,
+  "requiredPriorityCheck": true,
+  "requiredCommissionCheck": true
 }

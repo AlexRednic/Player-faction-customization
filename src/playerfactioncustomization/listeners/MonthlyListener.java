@@ -20,8 +20,4 @@ public class MonthlyListener extends BaseCampaignEventListener {
 		PlayerFaction.learnBlueprints();
 		PlayerFaction.updateVariants();
 	}
-
-
-
-
 }

@@ -15,7 +15,20 @@ For more in-depth information on modding refer to the following resources:
 - Campaign Integration to not disrupt immersion
 - Automatic generation of faction ship variants based on your own configured variants
 
-## Caveat: Right now, variants in your faction fleet generation are updated at the beginning of the month or when you add a new variant in the refit screen. If you don't see them, try check/uncheck on priority ships to refresh.
+## Caveat 1: Right now, variants in your faction fleet generation are updated at the beginning of the month or when you add a new variant in the refit screen. If you don't see them, try check/uncheck on priority ships to refresh.
+## Caveat 2: When you delete a variant from the refit screen, use the intel or console commands to update variants. Otherwise, there is a possibility of a crash.
+
+## Settings
+### playerfactioncustomization_settings.json
+- ` "requiredIndustryCheck": true,` - Setting to govern whether to check for industry buildings as condition to generate blueprint
+- ` "requiredPriorityCheck": true,` - Setting to govern whether to check for priority tick in doctrine screen when updating variants. If 
+false, variants for player tech ships will be added even if not ticked
+- ` "requiredCommissionCheck": true` - Setting to govern whether to check for active commission as condition to generate blueprint
+
+### playerfactioncustomization_max_percentage.json
+The aggregated percentage that your ships will sum up to during fleet generation for each role. If role is missing, it will default to 100
+- `"COMBAT_LARGE": 100,`  
+- `"COMBAT_MEDIUM": 100`
 
 ## Step 1 - Create ships and sprites
 
@@ -49,6 +62,9 @@ any existing designs you know that have a correspondent "player" manufactured sh
 
 The generation of the new ship design is made at the end of the month, during the Economy calculation. Remember, you need to have 
 learned the blueprint.
+
+Use the Intel Plugin under Personal tab to see current variants and Update Blueprints or Update Variants on the fly.
+![intel-plugin](readme-screenshots/intel-plugin.png)
 
 Below we see the Legion (XIV-DAC) is already learned and we are expecting the Eradicator (DAC) to pop-up.
 
